@@ -2,6 +2,8 @@
 title: "什么是GC Roots"
 date: 2019-12-03T01:07:47+08:00
 draft: false
+tags: ["java","GC"]
+categories: ["java"]
 ---
 
 # GC Root
