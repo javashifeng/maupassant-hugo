@@ -1,8 +1,8 @@
 +++
 title = "CentOS修改时区为东八区"
 date = 2019-12-03T16:32:32+08:00
-draft = true
-tags = [""]
+draft = false
+tags = ["CentOS"]
 comments = true
 share = true
 +++
