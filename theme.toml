@@ -11,8 +11,8 @@ features = []
 min_version = "0.27"
 
 [author]
-  name = "Joker Qyou"
-  homepage = "https://mynook.info"
+  name = "Schecter"
+  homepage = "https://antcvs.com"
 
 # If porting an existing theme
 [original]
