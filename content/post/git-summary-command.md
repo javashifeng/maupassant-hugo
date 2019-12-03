@@ -2,6 +2,8 @@
 title: "Git Summary Command"
 date: 2019-04-01T00:07:47+08:00
 draft: false
+tags: ["git"]
+categories: ["Git"]
 ---
 
 查看git上个人代码量

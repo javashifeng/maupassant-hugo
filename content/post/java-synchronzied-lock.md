@@ -3,6 +3,7 @@ title = "锁优化：逃逸分析、自旋锁、锁消除、锁粗化、轻量�
 date = 2019-12-03T16:20:10+08:00
 draft = false
 tags = ["synchronzied锁", "java"]
+categories: ["Java"]
 comments = true
 share = true
 +++
