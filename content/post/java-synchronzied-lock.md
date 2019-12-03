@@ -35,6 +35,7 @@ Scalar replacement：标量scalar是不可再分解的量，比如基本数据�
 如下是TASLock及其测试类示例代码：
 
 TASLock
+```
 /**
  * Tast And Set Loc：测试-设置锁
  *
@@ -63,7 +64,9 @@ public class TASLock implements Lock {
         mutex.set(false);//fixme ?释放锁？
     }
 }
+```
 计时类
+```
 /**
  * 计时类
  */
@@ -90,7 +93,9 @@ public class TimeCost implements Lock {
         lock.unlock();
     }
 }
+```
 驱动类
+```
 public class TASLockMain {
     private static TimeCost timeCost=new TimeCost(new TTASLock());
 //  private static TimeCost timeCost=new TimeCost(new TASLock());
@@ -108,6 +113,7 @@ public class TASLockMain {
 
     }
 }
+```
 3.同步消除：锁消除Lock Elision、锁粗化Lock Coarsening
 锁消除：虚拟机的运行时编译器在运行时如果检测到一些要求同步的代码上不可能发生共享数据竞争，则会去掉这些锁。
 
