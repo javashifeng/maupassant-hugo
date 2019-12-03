@@ -1,11 +1,11 @@
 +++
-title: "CentOS修改时区为东八区"
-date: 2019-12-03T16:32:32+08:00
-draft: false
-tags: ["CentOS"]
-categories: ["Linux"]
-comments: true
-share: true
+title = "CentOS修改时区为东八区"
+date = 2019-12-03T16:32:32+08:00
+draft = false
+tags = ["CentOS"]
+categories = ["Linux"]
+comments = true
+share = true
 +++
 
 

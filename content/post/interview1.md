@@ -1,10 +1,10 @@
----
-title: "面试考点梳理"
-date: 2019-04-14T17:54:02+08:00
-draft: false
-tags: ["java","面试"]
-categories: ["Java","面试"]
----
++++
+title = "面试考点梳理"
+date = 2019-04-14T17:54:02+08:00
+draft = true
+tags = ["java","面试"]
+categories = ["Java","面试"]
++++
 
 # Java面试考点梳理
 

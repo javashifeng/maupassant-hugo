@@ -1,10 +1,10 @@
----
-title: "什么是GC Roots"
-date: 2019-12-03T01:07:47+08:00
-draft: false
-tags: ["java","gc"]
-categories: ["Java"]
----
++++
+title = "什么是GC Roots"
+date = 2019-12-03T01:07:47+08:00
+draft = false
+tags = ["java","gc"]
+categories = ["Java"]
++++
 
 # GC Root
 我们常说的GC root，特指垃圾回收器的对象，GC会收集不是GC root且没有被gc root引用的对象。

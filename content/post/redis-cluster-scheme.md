@@ -1,10 +1,10 @@
----
-title: "Redis集群"
-date: 2019-04-14T17:54:02+08:00
-draft: false
-tags: ["web","golang"]
-categories: ["Redis"]
----
++++
+title = "Redis集群"
+date = 2019-04-14T17:54:02+08:00
+draft = false
+tags = ["web","golang"]
+categories = ["Redis"]
++++
 
 # Redis集群方案
 本篇文章简单介绍五种方案：
