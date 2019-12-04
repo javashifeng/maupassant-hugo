@@ -8,5 +8,8 @@
 	path = themes/casper
 	url = https://github.com/vjeantet/hugo-theme-casper.git casper
 [submodule "themes/maupassant-hugo"]
-	path = themes/maupassant-hugo
+	path = themes/maupassant
+	url = https://github.com/rujews/maupassant-hugo.git maupassant
+[submodule "themes/maupassant"]
+	path = themes/maupassant
 	url = https://github.com/rujews/maupassant-hugo.git

@@ -15,4 +15,4 @@ categories = ["Java"]
  - 常量对象
  - 本地方法栈中的JNI（java Nativa方法）中引用的对象
 
-![](gc-root/images/d8301bfc.png)
+![](images/d8301bfc.png)

@@ -1,8 +1,11 @@
 baseURL = "http://blog.antcvs.com"
+relativeURLs = false
+canonifyURLs = false
+uglyurls = false
 languageCode = "zh-CN"
 title = "My Nook"
 hasCJKLanguage = true
-theme = "maupassant-hugo"
+theme = "maupassant"
 enableRobotsTXT = true
 PaginatePath = "page"
 
@@ -17,6 +20,10 @@ PaginatePath = "page"
 
     customCSS = ["style.extra.css"]
     customJS = ["app.extra.js"]
+
+[imaging]
+resampleFilter = "box"
+canonifyURLs= true
 
 [params.utteranc]
     repo = "JokerQyou/comments"
