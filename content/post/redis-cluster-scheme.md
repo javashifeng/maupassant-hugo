@@ -24,4 +24,4 @@ categories = ["Redis"]
 从redis 3.0版本开始支持redis-cluster集群，redis-cluster采用无中心结构，每个节点保存数据和整个集群状态，每个节点都和其他节点连接。redis-cluster是一种服务端分片技术。
 
 redis-cluster架构图
-![avatar](http://ppy43bfrr.bkt.clouddn.com/79e1497f92982c6e78d60dec6269e13f.jpeg)
+

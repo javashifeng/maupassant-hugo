@@ -9,10 +9,12 @@ share = true
 +++
 
 
-1. 逃逸分析 Escape Analysis
+1 逃逸分析 Escape Analysis
+
 1.1 逃逸分为两种：
 方法逃逸：当一个对象在方法中被定义后，可能作为调用参数被外部方法说引用。
 线程逃逸：通过复制给类变量或者作为实例变量在其他线程中可以被访问到。
+
 1.2 逃逸分析相关优化
 如果证明一个对象不会逃逸方法外或者线程外，则可针对此变量进行一下三种优化：
 
@@ -22,9 +24,12 @@ share = true
 Scalar replacement：标量scalar是不可再分解的量，比如基本数据类型，聚合量Aggregate是可以在被分解的，比如java中的对象。标量替换是将一个聚合量拆散，根据程序对此聚合量的访问情况，将其使用到的成员变量恢复到原始变量来访问就是标量替换。==逃逸分析如果证明一个对象不会被外部访问，并且此对象可以被拆散，则程序执行时可能不会创建此对象==。
 
 1.3 参数开启
--XX:+DoEscapeAnalysis开启逃逸分析；
--XX:+EliminateLocks开启同步消除；
--XX:+EliminateAllocations开启标量替换；
+```-XX:+DoEscapeAnalysis```开启逃逸分析；
+
+```-XX:+EliminateLocks```开启同步消除；
+
+```-XX:+EliminateAllocations```开启标量替换；
+
 2.自旋锁
 线程等待的方式有两种，挂起和自旋。
 
@@ -65,6 +70,7 @@ public class TASLock implements Lock {
     }
 }
 ```
+
 计时类
 ```
 /**
@@ -94,6 +100,7 @@ public class TimeCost implements Lock {
     }
 }
 ```
+
 驱动类
 ```
 public class TASLockMain {
@@ -114,19 +121,20 @@ public class TASLockMain {
     }
 }
 ```
+
 3.同步消除：锁消除Lock Elision、锁粗化Lock Coarsening
 锁消除：虚拟机的运行时编译器在运行时如果检测到一些要求同步的代码上不可能发生共享数据竞争，则会去掉这些锁。
 
 锁粗化：将临近的代码块用同一个锁合并起来。
 
-参数设置:-XX:+EliminateLocks。
+参数设置:```-XX:+EliminateLocks```。
 
 消除无意义的锁获取和释放，可以提高程序运行性能。
 
 4.轻量级锁
 轻量级锁提升性能的依据是“绝大多数同步的锁都是不存在竞争的”，对于竞争的情况轻量级锁比传统的重量级锁更慢。
 
--XX:+UseHeavyMonitors可以禁用轻量级锁和偏向锁。
+```-XX:+UseHeavyMonitors```可以禁用轻量级锁和偏向锁。
 
 4.1 对象头及其他
 HotSpot虚拟机对象头object header分为两部分信息：
@@ -149,6 +157,7 @@ mark word 对象自身的运行时信息，例如哈希码hascode、GC分代年�
 
 把把锁对象的mark word和线程的栈帧中复制的mark word替换回来，成功者同步完成；
 失败说明有其他线程尝试获取该锁，则在释放锁的同时唤醒挂起的线程。
+
 5.偏向锁 biased lock
 偏向锁更近一步，在无竞争的情况下直接把整个同步消除掉。如果程序大多数锁总是被多个线程访问则没必要开启。-XX:+UseBiasedLocking开启偏向锁。
 
