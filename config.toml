@@ -25,7 +25,7 @@ PaginatePath = "page"
 
 [[params.links]]
     name = "王世峰 博客"
-    url = "https://blog.antcvs.com/"
+    url = "http://blog.antcvs.com/"
     title = ""
 
 [[menu.main]]
