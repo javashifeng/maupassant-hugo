@@ -1,4 +1,4 @@
-baseURL = "https://blog.antcvs.com"
+baseURL = "http://blog.antcvs.com"
 languageCode = "zh-CN"
 title = "My Nook"
 hasCJKLanguage = true
@@ -25,7 +25,7 @@ PaginatePath = "page"
 
 [[params.links]]
     name = "王世峰 博客"
-    url = "https://tomli.blog/"
+    url = "https://blog.antcvs.com/"
     title = ""
 
 [[menu.main]]
