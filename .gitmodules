@@ -6,7 +6,7 @@
 	url = https://github.com/budparr/gohugo-theme-ananke.git
 [submodule "themes/casper"]
 	path = themes/casper
-	url = https://github.com/vjeantet/hugo-theme-casper.git casper
+	url = https://github.com/vjeantet/hugo-theme-casper.git
 [submodule "themes/maupassant"]
 	path = themes/maupassant
-	url = https://github.com/rujews/maupassant-hugo.git maupassant
+	url = https://github.com/JokerQyou/maupassant-hugo.git
