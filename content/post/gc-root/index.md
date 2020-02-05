@@ -16,3 +16,7 @@ categories = ["Java"]
  - 本地方法栈中的JNI（java Nativa方法）中引用的对象
 
 ![](images/d8301bfc.png)
+
+
+在 JDK 1.8中移除整个永久    代，取而代之的是一个叫元空间（Metaspace）的区域（永久代使用的是JVM的堆内存空间，而元空间使用的是物理内存，直接受到本机的物理内存限制）。
+![](images/34471040.png)
